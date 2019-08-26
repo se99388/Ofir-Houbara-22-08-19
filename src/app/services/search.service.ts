@@ -10,7 +10,7 @@ export class SearchService {
     constructor(private httpClient: HttpClient) { }
 
     public getSearchByCity(city: string): Observable<any> {
-        return this.httpClient.get<any>("http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=jBGhMi9zBigHKXYx4ZQVm0ApZoGAbiHX&q=" + city);
+        return this.httpClient.get<any>("https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=jBGhMi9zBigHKXYx4ZQVm0ApZoGAbiHX&q=" + city);
     }
 
 

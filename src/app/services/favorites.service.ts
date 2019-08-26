@@ -45,7 +45,7 @@ export class FavoritesService {
     public getCurrentWeatherOfFavCity(cityId):Observable<any> {
 
         this.isCelsius = this.redux.getState().isCelsius;
-        return this.httpClient.get<any>("http://dataservice.accuweather.com/currentconditions/v1/" + cityId + "?apikey=jBGhMi9zBigHKXYx4ZQVm0ApZoGAbiHX&metric="+ this.isCelsius);
+        return this.httpClient.get<any>("https://dataservice.accuweather.com/currentconditions/v1/" + cityId + "?apikey=jBGhMi9zBigHKXYx4ZQVm0ApZoGAbiHX&metric="+ this.isCelsius);
 
     }
 }

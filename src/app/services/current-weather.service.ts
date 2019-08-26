@@ -22,10 +22,10 @@ export class CurrentWeatherService {
     public addCurrentWeatherByCityId(cityId: number, cityName: string): void {
 
         if (this.redux.getState().isCelsius){
-            this.url = "http://dataservice.accuweather.com/currentconditions/v1/" + cityId + "?apikey=jBGhMi9zBigHKXYx4ZQVm0ApZoGAbiHX&metric=true"
+            this.url = "https://dataservice.accuweather.com/currentconditions/v1/" + cityId + "?apikey=jBGhMi9zBigHKXYx4ZQVm0ApZoGAbiHX&metric=true"
         }
         else{
-            this.url = "http://dataservice.accuweather.com/currentconditions/v1/" + cityId + "?apikey=jBGhMi9zBigHKXYx4ZQVm0ApZoGAbiHX&metric=false"
+            this.url = "https://dataservice.accuweather.com/currentconditions/v1/" + cityId + "?apikey=jBGhMi9zBigHKXYx4ZQVm0ApZoGAbiHX&metric=false"
         }
 
         this.httpClient.get<any>(this.url).subscribe((response) => {
