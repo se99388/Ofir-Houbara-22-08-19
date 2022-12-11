@@ -24,7 +24,7 @@
     "@angular/platform-browser": "~8.0.1",
     "@angular/platform-browser-dynamic": "~8.0.1",
     "@angular/router": "~8.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "ng2-redux": "^5.1.2",
     "redux": "^4.0.4",
     "rxjs": "~6.4.0",
